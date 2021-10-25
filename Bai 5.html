@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function diagonalTotal(arr) {
+        let leftDia = 0, rightDia = 0;
+        for (let i = 0; i < arr.length; i++) {
+            leftDia += arr[i][i]
+            rightDia += arr[i][arr.length - i - 1]
+        }
+        let total = leftDia + rightDia
+        return document.write("Tong 2 duong cheo cua ma tran vuong la " + total);
+    }
+
+    let matrixArray = [ [1,2,3],
+                        [4,5,6],
+                        [7,8,9] ]
+    document.write("Mang ma tran la [ [" + matrixArray[0] + "], [" + matrixArray[1] + "], [" + matrixArray[2] + "] ]" + "<br>")
+    diagonalTotal(matrixArray)
+</script>
+</body>
+</html>

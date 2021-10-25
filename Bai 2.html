@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function isOdd(n) {
+            if (n % 2 === 0) {
+                return false
+            } else {
+                return true
+            }
+        }
+
+        function totalOdd() {
+            let total = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (isOdd(arr[i])) {
+                    total = total + arr[i]
+                }
+            }
+            return total;
+        }
+
+        let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        document.write("Mang arr bao gom [" + arr + " ]" + "<br>")
+        document.write("Tong cac so le trong mang la " + totalOdd(arr));
+    </script>
+</body>
+</html>

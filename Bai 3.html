@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let currentYear = new Date().getFullYear();
+        let inputYear = +prompt("Nam sinh cua ban la?")
+        function calcAge(birthYear) {
+            if (birthYear < currentYear) {
+                let age = currentYear - birthYear
+                return alert("Tuoi hien tai cua ban la " + age);
+            } else if (birthYear > currentYear) {
+                return alert("Tuoi khong hop le")
+            }
+        }
+        calcAge(inputYear);
+    </script>
+</body>
+</html>
